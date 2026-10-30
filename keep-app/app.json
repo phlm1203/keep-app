@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "Keep",
+    "slug": "keep-app",
+    "scheme": "keep",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.keep.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "O Keep usa a câmera para escanear o código de barras dos produtos e tirar fotos deles.",
+        "NSPhotoLibraryUsageDescription": "O Keep acessa suas fotos para você escolher a imagem de um produto."
+      }
+    },
+    "android": {
+      "package": "com.keep.app",
+      "permissions": [
+        "CAMERA"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundColor": "#FF7A1A"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "O Keep usa a câmera para escanear o código de barras dos produtos.",
+          "microphonePermission": false,
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "O Keep usa a câmera para tirar fotos dos produtos.",
+          "photosPermission": "O Keep acessa suas fotos para você escolher a imagem de um produto."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "backgroundColor": "#FF7A1A"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      [
+        "expo-notifications",
+        {
+          "color": "#FF7A1A"
+        }
+      ],
+      "expo-status-bar"
+    ]
+  }
+}
