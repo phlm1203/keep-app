@@ -6,8 +6,8 @@
 //    ou direto nas strings abaixo.
 // 2) CONTACT: dados exibidos na tela "Ajuda" (troque pelos oficiais).
 // ─────────────────────────────────────────────────────────────
-export const SUPABASE_URL = process.env.EXPO_PUBLIC_SUPABASE_URL || 'https://seu-projeto.supabase.co';
-export const SUPABASE_ANON_KEY = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY || 'sua-anon-key';
+export const SUPABASE_URL = process.env.EXPO_PUBLIC_SUPABASE_URL || 'https://gfcobgoszpmfvbsmcpsb.supabase.co';
+export const SUPABASE_ANON_KEY = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY || 'sb_publishable_7VbO3UnWwmZ4tzB_U4CI_A_eUhLxovK';
 
 export const isSupabaseConfigured =
   Boolean(SUPABASE_URL && SUPABASE_ANON_KEY) &&
